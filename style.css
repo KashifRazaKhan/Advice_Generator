@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+--lightCyan: hsl(193, 38%, 86%);
+--neonGreen: hsl(150, 100%, 66%);
+--grayishBlue: hsl(217, 19%, 38%);
+--darkGrayishBlue: hsl(221, 13%, 33%);
+--darkBlue: hsl(218, 23%, 16%);
+--cardBg: hsl(213,18%,23%)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3rem;
+    font-family: 'Manrope', sans-serif;
+    color: var(--lightCyan);
+    background: var(--darkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    width: 22rem;
+    height: 20rem;
+    border-radius: 0.63rem;
+    background: var(--cardBg);
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+    padding: 2.5rem 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#ntimes{
+    color: var(--neonGreen);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+#adv{
+    text-align: center;
+}
+
+#line img {
+    width: 100%;
+    height: auto;
+}
+#btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--neonGreen);
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  bottom: -5.3rem;
+  cursor: pointer;
+}
+#btn:hover{
+    -webkit-box-shadow:0px 0px 82px 15px rgba(45,255,196,0.88);
+    -moz-box-shadow: 0px 0px 82px 15px rgba(45,255,196,0.88);
+     box-shadow: 0px 0px 82px 15px rgba(45,255,196,0.88);
+}
+/* Media Queries */
+@media(min-width: 36em){
+    .card{
+        font-size: 1.5rem;
+        width: 34rem;
+        height: 20rem;
+        border-radius: 1.3rem;}
+}
